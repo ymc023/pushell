@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pushell</title>
+        <link rel="shortcut icon" href="/static/img/pushell.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="/static/css/reset.css">
+        <link rel="stylesheet" href="/static/css/supersized.css">
+        <link rel="stylesheet" href="/static/css/loginstyle.css">
+        <link rel="stylesheet" href="/static/css/xcConfirm.css">
+	<link rel="stylesheet" href="/static/css/style4.css" />     
+        <!-- Javascript -->
+        <script src="/static/js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/static/js/xcConfirm.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/static/js/jquery-1.8.2.min.js"></script>
+        <script src="/static/js/supersized.3.2.7.min.js"></script>
+        <script src="/static/js/supersized-init.js"></script>
+        <script src="/static/js/scripts.js"></script>
+    </head>
+    <body>
+    <!--
+   <div style="position:fixed; right:0; bottom:0" id="time"> </div> 
+    <script type="text/javascript">  
+      function getTime(){  
+       var t=new Date();   
+        with(t){                                                                                                                       
+        var _time=""+getFullYear()+"-" + (getMonth()+1)+"-"+getDate()+" " + (getHours()<10 ? "0" :"") + getHours() + ":" + (getMinutes()<10 ? "0" :"") + getMinutes() + ":" + (getSeconds()<10 ? "0" :"") + getSeconds();                                                                  } 
+            document.getElementById("time").innerHTML=_time;      
+            setTimeout("getTime()",1000);                                                                                             
+        }
+        getTime() 
+    </script> 
+    -->
+    <div class="page-container">
+    <form id="auth_form" name="auth_form" action="" method="post" onclick="auth_check()">
+     <script type="text/javascript"> 
+       function auth_check(){
+         var re = /^[0-9]+.?[0-9]*$/;
+         var objusername=document.forms['auth_form'].username;
+         var objpassword=document.forms['auth_form'].password;
+         var objtoken=document.forms['auth_form'].token;
+         var auth_name=objusername.value;
+         var auth_pass=objpassword.value;
+         var auth_token=objtoken.value;
+         if (auth_name== "" || auth_pass=="" || auth_token=="" )
+         {
+            return false;
+          }
+         else if (!re.test(auth_token)){
+           return false; 
+         }
+         else{
+           document.forms[0].submit(); }
+         }
+      </script>
+        <h1>Pushell</h1>
+             <input type="text" name="username" class="username" AUTOCOMPLETE="off" placeholder="Username">
+             <input type="password" name="password" class="password"  AUTOCOMPLETE="off" placeholder="Password"> 
+             <input type="password" name="token" class="token" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value    =this.value.replace(/\D/g,'')"  AUTOCOMPLETE="off" placeholder="Token"> 
+             <button id="auth_button" type="submit" class="a-btn" name="auth_button" onclick="auth_check()"> 
+              <span class="a-btn-text" onclick="auth_check()">Enter</span>
+              <span class="a-btn-slide-text" onclick="auth_check()">Sign in!</span>
+              <span class="a-btn-icon-right" onclick="auth_check()"></span>               
+             </button>
+             <div class="error"><span>+</span></div>
+    </form> 
+           {% if error %}
+	   <script type="text/javascript">
+	     var txt=  "{{error}}";
+	      window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.error);
+          </script>
+         {% endif %}
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,94 @@
+
+user  nginx;
+worker_processes  4;
+
+error_log  logs/error.log;
+#error_log  logs/error.log  notice;
+#error_log  logs/error.log  info;
+
+pid        logs/nginx.pid;
+
+
+events {
+    worker_connections  1024;
+}
+
+
+http {
+    include       mime.types;
+    lua_package_path "/usr/local/nginx/conf/waf/?.lua";
+    lua_shared_dict limit 10m;
+    init_by_lua_file  /usr/local/nginx/conf/waf/init.lua; 
+    lua_need_request_body on;
+    access_by_lua_file /usr/local/nginx/conf/waf/waf.lua;
+    include       vhost/b2.hlxy.conf;
+    include       vhost/bank.hlxy.conf;
+    include       vhost/manage.hlxy.conf;
+    include       vhost/www.hlxy.conf;
+    default_type  application/octet-stream;
+
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+
+    allow 222.177.27.253;
+    access_log  logs/access.log  main;
+    limit_conn_zone $binary_remote_addr zone=conn:10m;
+    #limit_req_zone $binary_remote_addr zone=allips:10m rate=5r/s;
+    
+    #proxy_cache_path /usr/local/nginx/b2.hlxy_cache levels=1:2 keys_zone=b2.hlxy_cache:20m max_size=30g inactive=168h;
+    #proxy_cache_path /usr/local/nginx/bank.hlxy_cache levels=1:2 keys_zone=bank.hlxy_cache:20m max_size=30g inactive=168h;
+    #proxy_cache_path /usr/local/nginx/m.hlxy_cache levels=1:2 keys_zone=m.hlxy_cache:20m max_size=30g inactive=168h;
+    
+    proxy_ignore_client_abort  on;
+    client_header_buffer_size  128k;
+    client_max_body_size 100m;
+    sendfile        on;
+    keepalive_timeout  5;
+    gzip  on;
+    gzip_min_length 1k;
+    gzip_buffers  4  16k;
+    gzip_comp_level 2;
+    gzip_vary on;
+    gzip_types       text/plain application/x-javascript text/css application/xml image/jpeg image/gif image/png; 
+
+    upstream  b2_hlxy_servers {
+        server 10.0.15.7:28080;
+        server 10.0.15.8:28080;
+        ip_hash;
+    }
+
+    upstream  bank_hlxy_servers {
+        server 10.0.15.7:18080;
+        server 10.0.15.8:18080;
+        ip_hash; 
+    }
+
+    upstream  m_hlxy_servers {
+        server 10.0.15.7:38080;
+        server 10.0.15.8:38080;
+        ip_hash;
+    }
+
+    # HTTPS server
+    #
+    #server {
+    #    listen       443 ssl;
+    #    server_name  localhost;
+
+    #    ssl_certificate      cert.pem;
+    #    ssl_certificate_key  cert.key;
+
+    #    ssl_session_cache    shared:SSL:1m;
+    #    ssl_session_timeout  5m;
+
+    #    ssl_ciphers  HIGH:!aNULL:!MD5;
+    #    ssl_prefer_server_ciphers  on;
+
+    #    location / {
+    #        root   html;
+    #        index  index.html index.htm;
+    #    }
+    #}
+
+}

@@ -1,0 +1,86 @@
+{% if request.session.role_id == 2 %}
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            {% include 'nav_li_profile.html' %}
+            <li id="index">
+            <a href="{% url 'index' %}"><i class="fa fa-dashboard"></i> <span class="nav-label">所有信息</span><span class="label label-info pull-right"></span></a>
+            </li>
+            <li id="juser">
+            <a href="#"><i class="fa fa-group"></i> <span class="nav-label">用户信息</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li class="group"><a href="{% url 'user_group_list' %}">用户组</a></li>
+                    <li class="user"><a href="{% url 'user_list' %}">用户<span class="label {% ifequal user_active_num user_total_num %}label-primary {% else %}label-warning {% endifequal %}pull-right">{{ user_active_num }}/{{ user_total_num }}</span></a></li>
+                </ul>
+            </li>
+            <li id="jasset">
+                <a><i class="fa fa-inbox"></i> <span class="nav-label">资产信息</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                <li class="group"><a href="{% url 'asset_group_list' %}">主机组</a></li>
+                <li class="asset"> <a href="{% url 'asset_list' %}">主机<span class="label label-info pull-right">{{ host_active_num }}/{{ host_total_num}}</span></a></li>
+                <li class="idc"> <a href="{% url 'idc_list' %}">IDC</a></li>
+                </ul>
+            </li>
+            <li id="jperm">
+            <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">授权信息</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li class="sudo">
+                        <a class="sudo" href="{% url 'sudo_list' %}">sudo授权</a>
+                    </li>
+                    <li class="role">
+                    <a href="{% url 'role_list' %}">系统用户</a>
+                    </li>
+                    <li class="rule">
+                    <a href="{% url 'rule_list' %}">授权规则</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="jlog">
+               <a href="{% url 'log_list' 'online' %}"><i class="fa fa-files-o"></i> <span class="nav-label">日志审计</span><span class="label label-info pull-right"></span></a>
+            </li>
+            <li id="file">
+            <a href="#"><i class="fa fa-download"></i> <span class="nav-label">文件传输</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li class="upload"><a href="{% url 'file_upload' %}">upload</a></li>
+                    <li class="download"><a href="{% url 'file_download' %}">download</a></li>
+                </ul>
+            </li>
+    </div>
+</nav>
+{% endif %}
+
+{% if request.session.role_id == 0 %}
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            {% include 'nav_li_profile.html' %}
+            <li id="juser">
+            <a href="{% url 'user_detail' %}"><i class="fa fa-dashboard"></i> <span class="nav-label">用户详情</span><span class="label label-info pull-right"></span></a>
+            </li>
+            <li id="jasset">
+               <a href="{% url 'asset_list' %}"><i class="fa fa-inbox"></i> <span class="nav-label">授权列表</span><span class="label label-info pull-right"></span></a>
+            </li>
+            <li id="file">
+                <a href="#"><i class="fa fa-download"></i> <span class="nav-label">文件传输</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li class="upload"><a href="{% url 'file_upload' %}">upload</a></li>
+                    <li class="download"><a href="{% url 'file_download' %}">download</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+{% endif %}
+
+{% if request.session.role_id == 3 %}
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            {% include 'nav_li_profile.html' %}
+            <li id="jlog">
+               <a href="{% url 'log_list' 'online' %}"><i class="fa fa-files-o"></i> <span class="nav-label">日志审计</span><span class="label label-info pull-right"></span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+{% endif %}

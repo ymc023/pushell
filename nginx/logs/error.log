@@ -1,0 +1,101 @@
+2016/09/13 14:09:04 [emerg] 6115#6115: open() "/usr/local/nginx/conf/vhost/b2.hlxy.conf" failed (2: No such file or directory) in /usr/local/nginx/conf/nginx.conf:24
+2016/09/13 14:56:39 [emerg] 24628#24628: open() "/usr/local/nginx/conf/proxy.conf" failed (2: No such file or directory) in /usr/local/nginx/conf/nginx.conf:17
+2016/09/13 14:57:26 [emerg] 24955#24955: open() "/data/nginx/logs/nginx_access.log" failed (2: No such file or directory)
+2016/09/13 15:02:38 [notice] 26991#26991: signal process started
+2016/09/13 15:04:32 [notice] 27768#27768: signal process started
+2016/09/13 15:04:53 [notice] 27907#27907: signal process started
+2016/09/13 15:05:48 [notice] 28254#28254: signal process started
+2016/09/13 15:09:53 [notice] 29957#29957: signal process started
+2016/09/13 15:19:08 [notice] 1198#1198: signal process started
+2016/09/13 15:34:46 [emerg] 7592#7592: unexpected end of file, expecting "}" in /usr/local/nginx/conf/vhost/pushell.conf:24
+2016/09/13 15:41:30 [emerg] 10340#10340: unknown directive "servername" in /usr/local/nginx/conf/vhost/pushell.conf:5
+2016/09/13 15:42:14 [emerg] 10631#10631: unknown directive "servername" in /usr/local/nginx/conf/vhost/pushell.conf:5
+2016/09/13 15:47:50 [notice] 12924#12924: signal process started
+2016/09/13 16:28:09 [notice] 31383#31383: signal process started
+2016/09/13 16:35:40 [notice] 2028#2028: signal process started
+2016/09/13 16:38:00 [notice] 3032#3032: signal process started
+2016/09/13 16:39:55 [emerg] 3916#3916: a duplicate default server for 0.0.0.0:443 in /usr/local/nginx/conf/vhost/pushell.conf:13
+2016/09/13 16:40:33 [notice] 4168#4168: signal process started
+2016/09/13 16:42:56 [notice] 5201#5201: signal process started
+2016/09/13 16:45:47 [notice] 6330#6330: signal process started
+2016/09/13 16:48:21 [notice] 7405#7405: signal process started
+2016/09/13 16:51:35 [notice] 8750#8750: signal process started
+2016/09/13 16:52:24 [notice] 9076#9076: signal process started
+2016/09/13 16:53:21 [notice] 9480#9480: signal process started
+2016/09/13 16:55:39 [notice] 10428#10428: signal process started
+2016/09/13 16:58:44 [notice] 11696#11696: signal process started
+2016/09/13 16:59:21 [notice] 11957#11957: signal process started
+2016/09/13 16:59:47 [notice] 12142#12142: signal process started
+2016/09/13 17:00:45 [notice] 12563#12563: signal process started
+2016/09/13 17:02:38 [emerg] 13369#13369: host not found in "default_server" of the "listen" directive in /usr/local/nginx/conf/vhost/zabbix.conf:3
+2016/09/13 17:03:39 [emerg] 13777#13777: host not found in "default_server" of the "listen" directive in /usr/local/nginx/conf/vhost/zabbix.conf:3
+2016/09/13 17:04:17 [emerg] 14039#14039: host not found in "default_server" of the "listen" directive in /usr/local/nginx/conf/vhost/zabbix.conf:3
+2016/09/13 17:04:58 [notice] 14350#14350: signal process started
+2016/09/13 17:06:34 [notice] 14963#14963: signal process started
+2016/09/13 17:08:41 [notice] 15787#15787: signal process started
+2016/09/13 17:13:41 [notice] 17756#17756: signal process started
+2016/09/13 17:14:27 [notice] 18089#18089: signal process started
+2016/09/13 17:15:19 [notice] 18419#18419: signal process started
+2016/09/13 17:18:40 [notice] 19753#19753: signal process started
+2016/09/13 17:21:37 [emerg] 20941#20941: unknown directive "html" in /usr/local/nginx/conf/vhost/ssl_zabbix.hlxy.com.conf:7
+2016/09/13 17:24:02 [notice] 21923#21923: signal process started
+2016/09/13 17:26:08 [notice] 22781#22781: signal process started
+2016/09/13 17:29:14 [emerg] 24031#24031: invalid number of arguments in "root" directive in /usr/local/nginx/conf/vhost/pushell.conf:19
+2016/09/13 17:29:29 [emerg] 24150#24150: invalid number of arguments in "proxy_pass" directive in /usr/local/nginx/conf/vhost/pushell.conf:28
+2016/09/13 17:29:59 [notice] 24367#24367: signal process started
+2016/09/13 17:30:39 [emerg] 24634#24634: open() "/usr/local/nginx/conf/vhost/ssl_zabbix.hlxy.com.conf" failed (2: No such file or directory) in /usr/local/nginx/conf/nginx.conf:64
+2016/09/13 17:30:45 [emerg] 24672#24672: open() "/usr/local/nginx/conf/vhost/ssl_zabbix.hlxy.com.conf" failed (2: No such file or directory) in /usr/local/nginx/conf/nginx.conf:64
+2016/09/13 17:31:20 [emerg] 24913#24913: open() "/usr/local/nginx/conf/vhost/ssl_zabbix.hlxy.com.conf" failed (2: No such file or directory) in /usr/local/nginx/conf/nginx.conf:64
+2016/09/13 17:33:32 [notice] 25820#25820: signal process started
+2016/09/13 17:36:14 [notice] 26927#26927: signal process started
+2016/09/13 17:41:23 [emerg] 29037#29037: open() "/usr/local/nginx/conf/allow_ip.conf" failed (2: No such file or directory) in /usr/local/nginx/conf/vhost/pushell.conf:6
+2016/09/13 17:41:53 [notice] 29253#29253: signal process started
+2016/09/13 17:43:24 [notice] 29875#29875: signal process started
+2016/09/13 17:43:50 [notice] 30018#30018: signal process started
+2016/09/13 17:44:19 [notice] 30227#30227: signal process started
+2016/09/13 17:45:28 [notice] 30712#30712: signal process started
+2016/09/13 17:46:07 [notice] 30980#30980: signal process started
+2016/09/13 17:46:29 [notice] 31130#31130: signal process started
+2016/09/13 17:46:58 [notice] 31342#31342: signal process started
+2016/09/13 17:48:03 [notice] 31798#31798: signal process started
+2016/09/13 17:48:57 [notice] 32168#32168: signal process started
+2016/09/13 17:49:21 [notice] 32307#32307: signal process started
+2016/09/13 17:49:52 [emerg] 32511#32511: duplicate location "/" in /usr/local/nginx/conf/vhost/pushell.conf:27
+2016/09/13 17:50:05 [notice] 32647#32647: signal process started
+2016/09/13 17:51:03 [notice] 602#602: signal process started
+2016/09/13 17:51:21 [notice] 706#706: signal process started
+2016/09/13 17:51:57 [notice] 990#990: signal process started
+2016/09/13 17:55:29 [emerg] 2384#2384: a duplicate default server for 0.0.0.0:80 in /usr/local/nginx/conf/vhost/pushell.conf:2
+2016/09/13 17:56:32 [emerg] 2797#2797: "server" directive is not allowed here in /usr/local/nginx/conf/vhost/pushell.conf:17
+2016/09/13 17:59:48 [emerg] 4065#4065: a duplicate default server for 0.0.0.0:80 in /usr/local/nginx/conf/vhost/pushell.conf:2
+2016/09/13 18:02:19 [emerg] 5105#5105: a duplicate default server for 0.0.0.0:80 in /usr/local/nginx/conf/vhost/pushell.conf:2
+2016/09/13 18:04:14 [notice] 5870#5870: signal process started
+2016/09/13 18:06:59 [emerg] 6996#6996: open() "/usr/local/nginx/conf/vhost/pushell.conf" failed (2: No such file or directory) in /usr/local/nginx/conf/nginx.conf:63
+2016/09/13 18:07:29 [notice] 7182#7182: signal process started
+2016/09/13 18:08:30 [notice] 7594#7594: signal process started
+2016/09/13 18:13:09 [emerg] 9445#9445: open() "/usr/local/nginx/conf/vhost/zabbix.conf" failed (2: No such file or directory) in /usr/local/nginx/conf/nginx.conf:61
+2016/09/13 18:13:27 [notice] 9567#9567: signal process started
+2016/09/13 18:15:43 [notice] 10443#10443: signal process started
+2016/09/13 18:16:20 [notice] 10692#10692: signal process started
+2016/09/13 18:23:17 [warn] 13428#13428: invalid parameter "spdy": ngx_http_spdy_module was superseded by ngx_http_v2_module in /usr/local/nginx/conf/vhost/zabbix_ssl.conf:3
+2016/09/13 18:23:17 [warn] 13428#13428: invalid parameter "spdy": ngx_http_spdy_module was superseded by ngx_http_v2_module in /usr/local/nginx/conf/vhost/pushell_ssl.conf:3
+2016/09/13 18:23:17 [emerg] 13428#13428: unknown directive "upsteam" in /usr/local/nginx/conf/nginx.conf:66
+2016/09/13 18:24:16 [warn] 13815#13815: invalid parameter "spdy": ngx_http_spdy_module was superseded by ngx_http_v2_module in /usr/local/nginx/conf/vhost/zabbix_ssl.conf:3
+2016/09/13 18:24:16 [warn] 13815#13815: invalid parameter "spdy": ngx_http_spdy_module was superseded by ngx_http_v2_module in /usr/local/nginx/conf/vhost/pushell_ssl.conf:3
+2016/09/13 18:33:55 [warn] 17607#17607: invalid parameter "spdy": ngx_http_spdy_module was superseded by ngx_http_v2_module in /usr/local/nginx/conf/vhost/zabbix_ssl.conf:3
+2016/09/13 18:33:55 [warn] 17607#17607: invalid parameter "spdy": ngx_http_spdy_module was superseded by ngx_http_v2_module in /usr/local/nginx/conf/vhost/pushell_ssl.conf:3
+2016/09/13 18:33:55 [emerg] 17607#17607: unknown "real_script_name" variable
+2016/09/13 18:34:12 [warn] 17691#17691: invalid parameter "spdy": ngx_http_spdy_module was superseded by ngx_http_v2_module in /usr/local/nginx/conf/vhost/zabbix_ssl.conf:3
+2016/09/13 18:34:12 [warn] 17691#17691: invalid parameter "spdy": ngx_http_spdy_module was superseded by ngx_http_v2_module in /usr/local/nginx/conf/vhost/pushell_ssl.conf:3
+2016/09/13 18:34:15 [warn] 17708#17708: invalid parameter "spdy": ngx_http_spdy_module was superseded by ngx_http_v2_module in /usr/local/nginx/conf/vhost/zabbix_ssl.conf:3
+2016/09/13 18:34:15 [warn] 17708#17708: invalid parameter "spdy": ngx_http_spdy_module was superseded by ngx_http_v2_module in /usr/local/nginx/conf/vhost/pushell_ssl.conf:3
+2016/09/13 18:34:15 [notice] 17708#17708: signal process started
+2016/09/13 18:35:31 [notice] 18223#18223: signal process started
+2016/09/13 18:36:27 [notice] 18607#18607: signal process started
+2016/09/16 10:24:04 [notice] 16666#16666: signal process started
+2016/09/18 14:46:40 [notice] 17593#17593: signal process started
+2016/09/18 14:48:56 [notice] 18533#18533: signal process started
+2016/09/18 15:34:28 [notice] 4379#4379: signal process started
+2016/09/20 17:25:26 [notice] 13847#13847: signal process started
+2016/09/20 17:30:26 [notice] 15847#15847: signal process started
+2016/09/20 17:33:30 [notice] 17057#17057: signal process started
