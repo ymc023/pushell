@@ -161,7 +161,7 @@ def user_add_mail(user, kwargs):
     发送用户添加邮件
     """
     user_role = {'SU': u'超级管理员', 'GA': u'组管理员', 'CU':u'普通用户','AU':'审计管理员','PU':'配置管理员'}
-    mail_title = u'[华龙强渝] 堡垒机Pushell账户通知！请及时更改初始密码!' 
+    mail_title = u'Pushell账户通知！请及时更改初始密码!' 
     mail_msg = u"""
 Hi, %s
 
@@ -169,12 +169,7 @@ Hi, %s
  Pusehll的web登录密码： %s
  Pusehll的密钥文件密码： %s
  Pushell的登录地址: %s
-
-说明:请将 119.84.15.139  pushell.hlxy.com 写入 [windows] c:/windows/system32/drivers/etc/hosts   [类unix] /etc/hosts
-     请登陆 pushell后台下载密钥! 可使用密钥登录pushell ssh！
-    
-提示:Pusehll将作为唯一登录生产环境的系统！请妥善保管自己的账号和密码!
-     若设置简单密码或密码泄露，造成一切后果，自负!
+ 请登陆 pushell后台下载密钥! 可使用密钥登录pushell ssh！
     """ % (user.name, user.username,kwargs.get('password'),kwargs.get('ssh_key_pwd'),'https://pushell.hlxy.com')
            #kwargs.get('password'), kwargs.get('ssh_key_pwd'), URL, user.uuid)
     send_mail(mail_title, mail_msg, MAIL_FROM, [user.email], fail_silently=False)
@@ -201,6 +196,6 @@ def get_display_msg(user, password='', ssh_key_pwd='', send_mail_need=False):
         web密码：%s <br />
         登录web后才能下载密钥,密钥密码：%s <br />
         该账号密码可以登陆web和Pushell。
-        """ % ('https://pushell.hlxy.com', user.username, password, ssh_key_pwd)
+        """ % ('https://pushell.ymc.com', user.username, password, ssh_key_pwd)
     return msg
 
