@@ -266,7 +266,7 @@ def send_mail_retry(request):
         pusehll的密钥密码： %s
         pushell的登录地址: %s
         说明:请登陆pushell后台下载密钥! 请在首次登录后更改初始密码！
-    """ % (user.username,user.password,'https://pushell.hlxy.com')
+    """ % (user.username,user.password,'https://pushell.ymc.com')
     try:
         send_mail(u'pushell账号发放,请及更改初始密码!', msg, MAIL_FROM, [user.email], fail_silently=False)
     except IndexError:
