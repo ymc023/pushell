@@ -170,7 +170,7 @@ Hi, %s
  Pusehll的密钥文件密码： %s
  Pushell的登录地址: %s
  请登陆 pushell后台下载密钥! 可使用密钥登录pushell ssh！
-    """ % (user.name, user.username,kwargs.get('password'),kwargs.get('ssh_key_pwd'),'https://pushell.hlxy.com')
+    """ % (user.name, user.username,kwargs.get('password'),kwargs.get('ssh_key_pwd'),'https://pushell.ymc.com')
            #kwargs.get('password'), kwargs.get('ssh_key_pwd'), URL, user.uuid)
     send_mail(mail_title, mail_msg, MAIL_FROM, [user.email], fail_silently=False)
 
