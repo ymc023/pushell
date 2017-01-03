@@ -54,3 +54,8 @@
 2016-11-07 01:00:01,672 - perm_api.py - DEBUG - 生成res: []
 2016-11-07 01:00:01,675 - ansible_api.py - DEBUG - {'dark': {}, 'contacted': {}}
 2016-11-07 01:00:01,675 - asset_api.py - DEBUG - 获取硬件信息: {'dark': {}, 'contacted': {}}
+2017-01-03 14:00:01,974 - perm_api.py - DEBUG - 生成res: [{'username': u'zhengxin', 'ip': u'10.0.15.8', 'password': 'r\x03\xe6/\'\xce\xf4\xc7\xf3\x16\xa1\xad\xb1\xbb\x1eU\xd9S"\xa0L~\xc1h#\xc7\xf9c \xceM\xc0', 'hostname': u'10.0.15.8', 'port': 2222}, {'username': u'hlqy2016', 'ip': u'10.0.15.17', 'password': '\x11b\x0c\xc7\xcf\x90\x8f\xdd0\xed\xe5\x034\xc8w\xac\x86_\x80\x01?^`{\xc5\xca\xf2\xd4q@\xdc@', 'hostname': u'10.0.15.17', 'port': 2222}]
+2017-01-03 14:00:12,177 - ansible_api.py - DEBUG - {'dark': {u'10.0.15.17': {'msg': 'FAILED: timed out', 'failed': True}, u'10.0.15.8': {'msg': 'FAILED: timed out', 'failed': True}}, 'contacted': {}}
+2017-01-03 14:00:12,178 - asset_api.py - DEBUG - 获取硬件信息: {'dark': {u'10.0.15.17': {'msg': 'FAILED: timed out', 'failed': True}, u'10.0.15.8': {'msg': 'FAILED: timed out', 'failed': True}}, 'contacted': {}}
+2017-01-03 14:00:12,178 - asset_api.py - ERROR - 获取setup_info失败: u'10.0.15.8'
+2017-01-03 14:00:12,179 - asset_api.py - ERROR - 获取setup_info失败: u'10.0.15.17'
