@@ -34,13 +34,6 @@ class Setup(object):
         self.admin_user = 'admin'
         self.admin_pass = 'admin'
 
-#    @staticmethod
-#    def _pull():
-#        try:
-#            mac = get_mac_address()
-#            version = urllib.urlopen('http://jumpserver.org/version/?id=%s' % mac)
-#        except:
-#            pass
 
     def _input_admin(self):
         while True:
@@ -85,16 +78,15 @@ class Setup(object):
         os.chmod('connect.py', 0755)
         os.chmod('manage.py', 0755)
         os.chmod('run_server.py', 0755)
-        os.chmod('service.sh', 0755)
         os.chmod('logs', 0777)
         os.chmod('keys', 0777)
 
     @staticmethod
     def _run_service():
-        cmd = 'bash %s start' % os.path.join(jms_dir, 'service.sh')
+        cmd = 'sudo python %s &' % os.path.join(jms_dir, 'run_server.py')
         shlex.os.system(cmd)
         print
-        color_print('安装成功，Web登录请访问http://ip:3721, 祝你使用愉快', 'green')
+        color_print('PUSHELL 安装成功，Web登录请访问http://ip:3721, 祝你使用愉快', 'green')
 
     def start(self):
         print "开始安装pushell ..."
