@@ -229,7 +229,7 @@ class PreSetup(object):
     def _depend_rpm(self):
         color_print('开始安装依赖包', 'green')
         if self._is_redhat:
-            cmd = 'yum -y install git python-pip mysql-devel rpm-build gcc automake autoconf python-devel vim sshpass lrzsz readline-devel'
+            cmd = 'yum -y install git python-pip mysql-devel MySQL-python rpm-build gcc automake autoconf python-devel vim sshpass lrzsz readline-devel'
             ret_code = bash(cmd)
             self.check_bash_return(ret_code, "安装依赖失败, 请检查安装源是否更新或手动安装！")
         if self._is_ubuntu:
@@ -248,7 +248,7 @@ class PreSetup(object):
         #with open('/root/.pip/pip.conf', 'w') as f:
         #    conf.write(f)
         color_print('开始安装python包', 'green')
-        bash('pip install upgrade pip')
+        bash('pip install --upgrade pip')
         bash('pip uninstall -y pycrypto')
         bash('rm -rf /usr/lib64/python2.6/site-packages/Crypto/')
         ret_code = bash('pip install -r requirements.txt')
