@@ -8,7 +8,7 @@
 
 ###安装
 1.git 代码 <br>
->![git clone](https://github.com/ymc023/pushell/blob/master/screenshot/1.jpg) 
+>![git clone](https://github.com/ymc023/pushell/blob/master/screenshot/11.jpg) 
 2.cd install/python install.py<br>
 >![cd instll &&python install.py](https://github.com/ymc023/pushell/blob/master/screenshot/2.jpg)
 >![](https://github.com/ymc023/pushell/blob/master/screenshot/3.jpg)
