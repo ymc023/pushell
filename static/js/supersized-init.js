@@ -23,7 +23,6 @@ jQuery(function($){
                                  {image : '/static/img/backgrounds/1.jpg'},
                                  {image : '/static/img/backgrounds/2.jpg'},
                                  {image : '/static/img/backgrounds/3.jpg'},
-                                 {image : '/static/img/backgrounds/4.jpg'},
                                  {image : '/static/img/backgrounds/6.jpg'},
                              ]
 
