@@ -19,3 +19,10 @@ ____
 >![](https://github.com/ymc023/pushell/blob/master/screenshot/5.jpg)
 <br>
 
+###使用
+
+----
+>1.启动<br>
+>![](https://github.com/ymc023/pushell/blob/master/screenshot/start_help.jpg)
+>![](https://github.com/ymc023/PUSHELL/blob/master/screenshot/start_examples.jpg)
+
