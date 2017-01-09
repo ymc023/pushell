@@ -18,3 +18,4 @@ django-crontab==0.6.0
 django-smtp-ssl==1.0
 pyte==0.5.2
 pyotp==2.2.1
+docopt==0.6.2
