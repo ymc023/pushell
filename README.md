@@ -1,28 +1,26 @@
-PUSHELL 
+#PUSHELL 
 ====
-Author:ymc023 Email:ymc023@163.com
-
-###注意
- 
->运行环境:<br>
->python  2.7.x<br>
->Mysql <br>
+前段时间公司做三级等保的时候，穷渣渣公司没买堡垒机，就让自己想办法解决！ 
+网上找到了jumpserver(感谢原作者)。于是改了下，就有了pushell.
+增加了功能：
+ 1.角色: 管理员，审计管理员，监控管理员,配置管理员，普通用户
+ 2.web二次验证:增加了token进行验证，令牌生成密码
+ 3.增加了URL监控，主机监控
+ 4.集成saltstack 
 
 ###安装
 ____
->1.git clone https://github.com/ymc023/pushell.git <br>
->2.cd pushell/install && sudo python install.py<br>
->![](https://github.com/ymc023/pushell/blob/master/screenshot/1.jpg) 
->![](https://github.com/ymc023/pushell/blob/master/screenshot/2.jpg)
+####环境准备
+>python  2.7.x<br>
+>mysql <br>
+>![git clone](https://github.com/ymc023/pushell/blob/master/screenshot/1.jpg) 
+>![cd instll &&python install.py](https://github.com/ymc023/pushell/blob/master/screenshot/2.jpg)
 >![](https://github.com/ymc023/pushell/blob/master/screenshot/3.jpg)
 >![](https://github.com/ymc023/pushell/blob/master/screenshot/4.jpg)
 >![](https://github.com/ymc023/pushell/blob/master/screenshot/5.jpg)
 <br>
-
 ###使用
-
 ----
->1.启动<br>
->![](https://github.com/ymc023/pushell/blob/master/screenshot/start_help.jpg)
->![](https://github.com/ymc023/PUSHELL/blob/master/screenshot/start_examples.jpg)
+>![pushelld.py --help](https://github.com/ymc023/pushell/blob/master/screenshot/start_help.jpg)
+>![pushell启动](https://github.com/ymc023/PUSHELL/blob/master/screenshot/start_examples.jpg)
 
