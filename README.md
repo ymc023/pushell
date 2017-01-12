@@ -10,10 +10,11 @@
 pushell启动 <br>
 >![pushelld.py --help](https://github.com/ymc023/pushell/blob/master/screenshot/start_help.jpg)
 >![pushell启动](https://github.com/ymc023/PUSHELL/blob/master/screenshot/start_examples.jpg)
-pushell token 安装<br>
+<br>
+pushell token安装<br>
 >![](https://github.com/ymc023/pushell/blob/master/screenshot/pushell_token_apk.jpg)
 <br>
-pusehll web 登录<br>
+pusehll web登录<br>
 >![](https://github.com/ymc023/pushell/blob/master/screenshot/pushell_web.jpg)
 >![](https://github.com/ymc023/pushell/blob/master/screenshot/pushell_admin_privileges.jpg)
 ###安装
