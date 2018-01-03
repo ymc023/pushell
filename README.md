@@ -11,18 +11,15 @@
 pushell启动 <br/>
 >![pushelld.py --help](https://github.com/ymc023/pushell/blob/master/screenshot/start_help.jpg)
 >![pushell启动](https://github.com/ymc023/PUSHELL/blob/master/screenshot/start_examples.jpg)
-<br/>
-pushell token安装<br/>
+
 >![image](https://github.com/ymc023/PUSHELL/raw/master/screenshot/pushell_token_apk.jpg)
-<br/>
-pusehll web登录<br/>
 >! [登录1](screenshot/pushell_web.jpg)
 >! [登录2](screenshot/pushell_admin_privileges.jpg)
-<br/>
+
 ###安装
 1.git 代码 <br/>
->! [git clone](screenshot/11.jpg) 
-2.cd install/python install.py<br>
+>![git clone](screenshot/11.jpg) 
+2.cd install/python install.py  <br>
 >! [cd instll &&python install.py](screenshot/2.jpg)
 >! [1](screenshot/3.jpg)
 >! [2](screenshot/4.jpg)
