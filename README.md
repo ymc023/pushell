@@ -13,7 +13,7 @@ pushell启动 <br/>
 >![pushell启动](https://github.com/ymc023/PUSHELL/blob/master/screenshot/start_examples.jpg)
 <br/>
 pushell token安装<br/>
->![install](https://github.com/ymc023/PUSHELL/blob/master/screenshot/pushell_token_apk.jpg)
+>![install](https://raw.githubusercontent.com/ymc023/PUSHELL/master/screenshot/pushell_token_apk.jpg)
 <br/>
 pusehll web登录<br/>
 >! [登录1](screenshot/pushell_web.jpg)
