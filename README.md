@@ -12,18 +12,18 @@ pushell启动 <br>
 >![pushell启动](https://github.com/ymc023/PUSHELL/blob/master/screenshot/start_examples.jpg)
 <br>
 pushell token安装<br>
->![](https://github.com/ymc023/pushell/blob/master/screenshot/pushell_token_apk.jpg)
+>![1](https://github.com/ymc023/pushell/blob/master/screenshot/pushell_token_apk.jpg)
 <br>
 pusehll web登录<br>
->![](https://github.com/ymc023/pushell/blob/master/screenshot/pushell_web.jpg)
->![](https://github.com/ymc023/pushell/blob/master/screenshot/pushell_admin_privileges.jpg)
+>![1](https://github.com/ymc023/pushell/blob/master/screenshot/pushell_web.jpg)
+>![2](https://github.com/ymc023/pushell/blob/master/screenshot/pushell_admin_privileges.jpg)
 ###安装
 1.git 代码 <br>
 >![git clone](https://github.com/ymc023/pushell/blob/master/screenshot/11.jpg) 
 2.cd install/python install.py<br>
 >![cd instll &&python install.py](https://github.com/ymc023/pushell/blob/master/screenshot/2.jpg)
->![](https://github.com/ymc023/pushell/blob/master/screenshot/3.jpg)
->![](https://github.com/ymc023/pushell/blob/master/screenshot/4.jpg)
->![](https://github.com/ymc023/pushell/blob/master/screenshot/5.jpg)
+>![1](https://github.com/ymc023/pushell/blob/master/screenshot/3.jpg)
+>![2](https://github.com/ymc023/pushell/blob/master/screenshot/4.jpg)
+>![3](https://github.com/ymc023/pushell/blob/master/screenshot/5.jpg)
 <br>
 
