@@ -1,11 +1,11 @@
 #PUSHELL 
 前段时间公司做三级等保的时候，穷渣渣公司没买堡垒机，就让自己想办法解决！ 网上找到了jumpserver(感谢原作者)。于是改了下代码，就有了pushell.运行环境 python2.7.x,mysql<br/>
 
-####添加功能如下：
+####添加功能如下：<br/>
  1.角色: 管理员，审计管理员，监控管理员,配置管理员，普通用户 <br/>
  2.二次验证:增加了token进行验证，令牌生成密码<br/>
  3.增加了URL监控，主机监控 <br/>
- 4.集成saltstack <b/r>
+ 4.集成saltstack <br/>
 
 ###使用
 pushell启动 <br/>
@@ -13,7 +13,7 @@ pushell启动 <br/>
 >![pushell启动](https://github.com/ymc023/PUSHELL/blob/master/screenshot/start_examples.jpg)
 <br/>
 pushell token安装<br/>
-> ![install] (screenshot/pushell_token_apk.jpg)
+>![install](https://github.com/ymc023/PUSHELL/blob/master/screenshot/pushell_token_apk.jpg)
 <br/>
 pusehll web登录<br/>
 >! [登录1](screenshot/pushell_web.jpg)
