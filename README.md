@@ -20,9 +20,9 @@ pushell启动 <br/>
 <br/>
 1.git 代码 
 >![git clone](screenshot/11.jpg) 
->! [cd instll &&python install.py] (screenshot/2.jpg)
->! [1](screenshot/3.jpg)
->! [2](screenshot/4.jpg)
->! [3](screenshot/5.jpg)
-<br/>
+>![0](screenshot/2.jpg)
+>![1](screenshot/3.jpg)
+>![2](screenshot/4.jpg)
+>![3](screenshot/5.jpg)
+
 
